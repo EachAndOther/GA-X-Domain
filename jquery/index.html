@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tracking Across Domains</title>
+<style type="text/css">
+	body { font: normal 16px/24px Georgia, "Times New Roman", Times, serif; }
+    	a { color: #900; }
+        a:hover { color: #333; }
+</style>
+</head>
+
+<body>
+<p><a href="http://blog.iqcontent.com/somesection/somepage.html">A link to the iQ Content Blog</a></p>
+<p><a href="http://www.iqcontent.com/">A link to the iQ Content Homepage</a></p>
+<p><a href="http://www.google.com/?q=iqcontent.com">A link to Google.com</a></p>
+<p><a href="http://iqprize.ie/blog/">A link to iQ Prize</a></p>
+<p><a href="http://www.facebook.com/petermckenna">A link to Facebook</a></p>
+<form method="post" action="http://www.iqcontent.com/contact.php">
+	<input type="text" /> <input type="submit" value="Submit" />
+</form>
+<script type="text/javascript" src="js/xdomain-track.js"></script>
+<script type="text/javascript">
+if(typeof(_gat)!='object')document.write('<sc'+'ript src="http'+
+(document.location.protocol=='https:'?'s://ssl':'://www')+
+'.google-analytics.com/ga.js"></sc'+'ript>')</script>
+<script type="text/javascript">
+var pageTracker=_gat._getTracker("UA-11111-1");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
